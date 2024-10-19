@@ -1,0 +1,38 @@
+body{
+    text-align: center;
+    background-color: #243642;
+    color: white;
+    font-weight: bold;
+}
+
+.h1{
+    text-align: center;
+    text-shadow: 2px 3px 4px rgb(9, 9, 42);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+label{
+    font-weight: bold;
+    
+}
+input{
+    font-weight: bold;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+input:hover{
+    border: 2px solid white;
+}
+
+.submit_sgpa_cal{
+    height: 40px;
+    width: 80px;
+    border-radius: 15%;
+    color: white;
+    font-weight: bold;
+    border: 2px solid white;
+}
+.submit_sgpa_cal:hover{
+    border: 3px solid white;
+    
+}
+

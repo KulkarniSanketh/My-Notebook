@@ -1,0 +1,122 @@
+.body {
+    font-family: Arial, sans-serif;
+    background-color: #243642;
+    align-items: center;
+    display: flex;
+    flex-direction: column;  
+}
+
+
+.container {
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    padding-left: 55px;
+    padding-top: 20px;
+    margin-top: 20px;
+    padding-bottom: 30px;
+    margin-bottom: 40px;
+    text-align: center;
+    display: flex;
+    box-shadow: 3px 2px white;
+}
+#todo-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#todo-input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#todo-date {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    color: white;
+}
+
+.add-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-button:hover {
+    background-color: #45a049;
+}
+
+.todo-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    background-color: #243642;
+}
+
+.todo-item {
+    color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todo-item:nth-child(odd){
+    border: 2px solid white;
+    
+}
+.todo-item:nth-child(even) {
+    border: 2px solid white;
+}
+
+.button-group {
+    display: flex;
+    gap: 5px;
+}
+
+.edit-button, .delete-button {
+    background-color: gold;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.edit-button:hover {
+    background-color: #e67e22;
+}
+
+.delete-button {
+    background-color: #e74c3c;
+}
+
+.delete-button:hover {
+    background-color: #c0392b;
+}
+
+.complete {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.date {
+    font-style: italic;
+    color: #666;
+}

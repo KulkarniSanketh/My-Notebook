@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Notebook</title>
+    <script src="./index.js"></script>
+    <link rel="html/text" href="Home.html">
+    <link rel="stylesheet" href="Login.css">
+    <link rel="icon" href="Notebook.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sofia&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Verification</h1>
+            <form action="./Login.html">
+                <div class="input-box">
+                    <input type="text" placeholder="Enter your USN" id='USN' required>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAiJJREFUWEft1j/IjWEYx/HP608GZFGIMCoTQmIwSDJYRAZJJtlEEQPK3zfJggySDAZioGTCQAYSUf6UwYBVERF5Lj3Hv845930/r/f0Jnc907mu6/c9v+d+fvfdZ4itviHG458CGostWIA5tdN3cQuH8aGJ+00dWoRzmNJB9AVW414pVBOghbiOkQmxcGgeHpVAlQKNwXNMzBR5ipn4kllfvKk34FTu8LpuOa7m9pQ6dAbrcofXdYewPbenFOgaluYOr+suY0VuTynQBazMHV7Xna+/uKy2UqCw/kDW5J9FkVVHcntKgaZWeygyZnimwGdMw+vM+uKvLOYew6ZMgf4qsbdl1n4vK3UoekbhCpYkhC5hVUkGNQWKvmHYir1tEvtd/dvJEmdatU0c+lVnNGZhNj7hPh5UufOxCcxAHGqql+wbqENJgdKCJkAz6gMzImBcB8G3eFlt6sd4UgKVCxSXsZ1YjwklAnUGncZ+vE/15gAtw1mMTw1L/P6mcmsNbnarSwFtxPGGedVO9yvW1rfNtlzdgOZWJ/vtKmtGDNCZP9sjEmJ225tkJ6C4nj7D9L8M0xr3sM6vcOy31Qkozp+DgwTTGhu3z9jsWUCvMGmQgSLVI+GTQPNxZ5BhWuMnI/78j9XulcWXdaJHQHH7vJgC2lGd4Pt6BLQZR1NAu7GrR0B7Kp3Q6/rKFiOeXqwblVY8XYF6AdJRI3V09BzuP1DK8m9Xs0gl5Tm5qgAAAABJRU5ErkJggg=="/>
+                </div>
+                <div class="input-box">
+                    <input type="text" placeholder="Enter your e-mail" required>
+                    <img src="email.svg" alt="E-mail">
+                </div>
+                <br>
+                <button id='login' onclick="check()">Send Verification Mail</button>
+                <div class="register">
+                    <p>Don't have an Account? <a href="./register.html">Register</a></p> 
+                </div>
+            </form>
+        
+    </div>
+</body>
+</html>

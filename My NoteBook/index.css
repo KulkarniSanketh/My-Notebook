@@ -1,0 +1,279 @@
+*{
+    background-color: #243642;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
+.Notebook-img{
+    height: 28px;
+    padding-right: 3px;
+    padding-left: 5px; 
+}
+.head h1{
+    padding-left: 4px;
+}
+
+.head{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid white;
+    padding-right: 5px;
+    padding-left: 5px;
+    
+    border-radius: 8px;
+}
+#links{
+    display: flex;
+    align-items: center;
+    padding-right: 15px;
+}
+#links a{
+    padding: 12px 12px 12px 12px;
+    margin-left: 8px;
+    height: 30%;
+    text-decoration: none;
+    border: 1px  solid white;
+    box-shadow: 2px 2px white;
+    border-radius: 5px;
+    
+}
+
+#links a:hover{
+    padding: 1.01em;
+}
+
+
+
+/* General Styles */
+
+
+
+   
+
+/* Hero Section */
+.hero {
+    background-color: #243642;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero-content h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-shadow: 2px 3px black;
+    transform: scale(1.1);
+    transition: 2s ease;
+}
+.hero-content h2:hover{
+    color: wheat;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+.cta-btn {
+    background-color: #243642;
+    border: 2px solid white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.cta-btn:hover{
+    font-size: 1.5em;
+}
+
+/* Features Section */
+.features {
+    padding: 50px 20px;
+    text-align: center;
+}
+.features h2{
+    text-shadow: 2px 3px black;
+}
+.features h2:hover{
+    transform: scale(1.1);
+    transition: 1s ease;
+}
+
+
+.feature-box {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.feature {
+    background-color: #243642;
+    border: 2px solid white;
+    border-radius: 8px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+.feature:hover{
+    font-size: 1.05em;
+}
+.feature h3 {
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    transform: scale(1.1);
+    transition: 2s ease;
+    text-shadow: 2px 3px black;
+}
+
+/* How It Works Section */
+.how-it-works {
+    background-color: #243642;
+    padding: 50px 20px;
+    text-align: center;
+    
+}
+.how-it-works h2{
+    text-shadow: 2px 3px black;  
+}
+.how-it-works h2:hover{
+    transform: scale(1.1);
+    transition: 2s ease;
+}
+.steps:hover{
+    font-size: 1.05em;
+}
+.steps {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+
+.step h4:hover{
+    transform: scale(1.1);
+    transition: 2s ease;
+    text-shadow: 2px 3px black;
+}
+.step {
+    background-color: #243642;
+    border: 2px solid white;
+    border-radius: 8px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.steps:hover{
+    font-size: 1,07em;
+}
+
+/* Footer Section */
+footer {
+    background-color: #243642;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-left: 20px;
+}
+
+.footer-links li a {
+    color: white;
+    font-weight: bold;
+}
+
+
+/*Profile Css*/
+
+.profile {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.profile-container {
+    background-color: #243642;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 50%;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-header {
+    margin-bottom: 20px;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.profile-header h2 {
+    margin: 10px 0;
+}
+
+.profile-details {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.profile-details p {
+    font-size: 1.1em;
+}
+
+.progress-tracking {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.progress-tracking ul {
+    list-style: none;
+    padding: 0;
+}
+
+.progress-tracking li {
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+/* Buttons */
+.actions {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    
+}
+
+.edit-btn, .logout-btn {
+    background-color: #243642;
+    border: 2px solid white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    align-items: center;
+    margin-left: 14rem;
+}
+
+#Profile_user_image{
+    height: 80px;
+    color: white;
+}
+
+
