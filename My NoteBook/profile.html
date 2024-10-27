@@ -14,10 +14,10 @@
             <h1><img src="Notebook.svg" alt="Notebook" class="Notebook-img"> My Notebook</h1>
             <div id="links">
                 <a href="index.html">Home Page</a>
-                <a href="./Calculator.html" onclick="statement()">CGPA Calculator</a>
-                <a href="./Growth.html">Growth</a>
-                <a href="./todo.html">Tasks</a>
-                <a href="./profile.html">Profile</a>
+                <a href="./Calculator.html" onclick="alert('En(In Capitals) or Grade or Marks to get SGPA')">CGPA Calculator</a>
+                <a href="./Growth.html" >Growth</a>
+                <a href="./todo.html" >Tasks</a>
+                <a href="./profile.html" >Profile</a>
                 <a href="./Login.html">Log Out</a>
             </div>
         </div>
@@ -34,12 +34,11 @@
                 <p id="pname">Name:</p>
                 <p id="pemail">Email:</p>
                 <p id="pusn">USN: </p>
-                <p id="ppass">Password: </p>
             </div>
             
             <hr>
             <div class="actions">
-                <a href="Profileedit.html" class="edit-btn">Edit Profile</a>                
+                <input type="button" value="Edit Profile" id="edit-btn" onclick="updateProfile()">             
             </div>
         </div>
     </section>

@@ -1,4 +1,4 @@
-let person={};
+
 
 function submit() {
     var credits = [];

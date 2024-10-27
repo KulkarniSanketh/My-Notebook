@@ -83,6 +83,9 @@
     font-size: 1.2em;
     font-weight: bold;
     text-decoration: none;
+    transition: 1s ease;
+    cursor: pointer;
+    
 }
 
 .cta-btn:hover{
@@ -261,7 +264,7 @@ footer {
     
 }
 
-.edit-btn, .logout-btn {
+#edit-btn, .logout-btn {
     background-color: #243642;
     border: 2px solid white;
     padding: 10px 20px;
@@ -269,6 +272,11 @@ footer {
     font-weight: bold;
     align-items: center;
     margin-left: 14rem;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
 }
 
 #Profile_user_image{
