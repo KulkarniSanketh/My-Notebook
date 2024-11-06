@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
     <link rel="stylesheet" href="Login.css">
-    <link rel="icon" href="Notebook.svg">
+    <link rel="icon" href="images/Notebook.svg">
     <script src="index.js"></script>
     
 </head>
@@ -17,26 +17,31 @@
     </div> -->
     <div class="container">
         <h1>Register</h1>
-            <form>
+        <form onsubmit="event.preventDefault(); register();">
+
                 <div class="input-box">
                     <input type="text" placeholder="Enter your FullName" id="Name" required>
-                    <img src="./name.svg" alt="User">
+                    <img src="images/name.png" alt="User">
                 </div>
                 <div class="input-box">
                     <input type="text" placeholder="Enter your USN" id="USN" required>
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAiJJREFUWEft1j/IjWEYx/HP608GZFGIMCoTQmIwSDJYRAZJJtlEEQPK3zfJggySDAZioGTCQAYSUf6UwYBVERF5Lj3Hv845930/r/f0Jnc907mu6/c9v+d+fvfdZ4itviHG458CGostWIA5tdN3cQuH8aGJ+00dWoRzmNJB9AVW414pVBOghbiOkQmxcGgeHpVAlQKNwXNMzBR5ipn4kllfvKk34FTu8LpuOa7m9pQ6dAbrcofXdYewPbenFOgaluYOr+suY0VuTynQBazMHV7Xna+/uKy2UqCw/kDW5J9FkVVHcntKgaZWeygyZnimwGdMw+vM+uKvLOYew6ZMgf4qsbdl1n4vK3UoekbhCpYkhC5hVUkGNQWKvmHYir1tEvtd/dvJEmdatU0c+lVnNGZhNj7hPh5UufOxCcxAHGqql+wbqENJgdKCJkAz6gMzImBcB8G3eFlt6sd4UgKVCxSXsZ1YjwklAnUGncZ+vE/15gAtw1mMTw1L/P6mcmsNbnarSwFtxPGGedVO9yvW1rfNtlzdgOZWJ/vtKmtGDNCZP9sjEmJ225tkJ6C4nj7D9L8M0xr3sM6vcOy31Qkozp+DgwTTGhu3z9jsWUCvMGmQgSLVI+GTQPNxZ5BhWuMnI/78j9XulcWXdaJHQHH7vJgC2lGd4Pt6BLQZR1NAu7GrR0B7Kp3Q6/rKFiOeXqwblVY8XYF6AdJRI3V09BzuP1DK8m9Xs0gl5Tm5qgAAAABJRU5ErkJggg=="/>
+                    <img src="images/user.png"/>
                 </div>
                 <div class="input-box">
                     <input type="text" placeholder="Enter your e-mail" id="email" required>
-                    <img src="email.svg" alt="E-mail">
+                    <img src="images/email.png" alt="E-mail">
                 </div>
                 <div class="input-box">
-                    <input type="password" placeholder="Password" id="Password" min="6" required>
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAZVJREFUWEft1z1PVEEUxvHfhopeIVBaakwo/QCEkkBvYWFsLIxUgoTXIIkGE6OFiZWVndGS0PkJLCDQUPJiKOALqOyYKTare2fmsiZA7qk2d557zj/PnjN3puWSReuS8bhWQHfwCGMIv0Ns4zveY6+O+3UdWsE8PR3+iVm8KoWqA/QOjzMLLbd1S5naP7JSoIf40FHgG+awE5/dxUvc69BM4WsuVAnQQLtnDjEUk3/CffzqKhZ0nzEZn+/i9v8AGsdWTHyGWzjtUWgE+xiM6wEogCWjxKEZbMSMXzCdyL6Jiah5gI9JmsIeWmjrQ5OGeIHniQLreBY1YSLX+g0UpmUxJs2ZnlJ98ZSVFijVN0BZG2TVlIW10IxhVx7OacgMzQ+8rWrwKqDXeJpRpI5ktb2hhqn9K6qATnCjTrWMd44wWgr0OyPxRST/NKPKoQYo2N041NF0TQ+lJrBxqHEo5UBq/er30HEfjx3dbtX6uHYe0lP2l67XOn6E/zjcSp/gZmnFHvoDvKm685fcy/rEVJ2mAUrZfA6IjUolahCe8wAAAABJRU5ErkJggg=="/>
+                    <input type="password" placeholder="Password" id="Password" onmouseenter="message()" oninput="verify()" onmouseout="clearmsg()" onclick="clearmsg()">
+                    <img src="images/locker.png"/>
                 </div>
+                <!-- <div>
+                    <small id="passmessage"></small>
+                </div> -->
+                    
                 <div class="input-box">
                     <input type="password" placeholder="Confirm your Password" id="ConfirmPass" min="6" required>
-                    <img src="password.svg" alt="password">
+                    <img src="images/password.png" alt="password">
                 </div>
                 <br>
                 <div id="terms">

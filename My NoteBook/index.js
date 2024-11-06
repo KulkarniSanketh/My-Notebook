@@ -2,44 +2,58 @@ function popup_submit(){
     window.location.href="index.html";
     return;
 }
+function call() {
+    let obj = new Date();
+    document.getElementById("hourse").innerHTML = Math.abs(obj.getHours() - 12);
+    document.getElementById("minutes").innerHTML = obj.getMinutes();
+    document.getElementById("seconds").innerHTML = obj.getSeconds();
+    document.getElementById("ms").innerHTML = obj.getMilliseconds()%10;
+}
+setInterval(call, 1);
+function register() {
+    const Name = document.getElementById('Name').value;
+    const usn = document.getElementById('USN').value; // Corrected to get USN
+    const email = document.getElementById('email').value; // Corrected to get email
+    const pass = document.getElementById('Password').value;
+    const cpass = document.getElementById('ConfirmPass').value;
 
-function register(){
-
-    const Name=document.getElementById('Name').value;
-    const email=document.getElementById('USN').value;
-    const usn=document.getElementById('email').value;
-    const pass=document.getElementById('Password').value;
-    const cpass=document.getElementById('ConfirmPass').value;
-    if(Name.length==0 || email.length==0 || usn.length==0 || pass.length==0 || cpass.length==0){
+    // Validation
+    if (Name.length == 0 || email.length == 0 || usn.length == 0 || pass.length == 0 || cpass.length == 0) {
         window.alert('All fields are mandatory');
+        return; // Prevent navigation
     }
-    else if(Name.length<5){
-        window.alert('Name should be atleast 5 characters long');
-        window.location.href="register.html";
-        
-        return;
+    if (Name.length < 5) {
+        window.alert('Name should be at least 5 characters long');
+        return; // Prevent navigation
     }
-    else if(pass.length<8){
-        window.alert('Password should be atleast 8 characters long');
-        window.location.href="register.html";
-        return;
+    if (pass.length < 8) {
+        window.alert('Password should be at least 8 characters long');
+        return; // Prevent navigation
     }
+    if (pass !== cpass) {
+        window.alert('Password and Confirm Password should be the same');
+        return; // Prevent navigation
+    }
+
+    // Save data to localStorage
+    localStorage.setItem('Fname', Name);
+    localStorage.setItem('Usn', usn);
+    localStorage.setItem('email', email);
+    localStorage.setItem('Pass', pass);
     
-    if((pass.length==0&&cpass.length==0)||pass!==cpass){
-        window.alert('Password and Confirm Password should be same');
-        window.location.href="register.html";
-    }
-    else{
-        window.location.href="index.html"; 
-    }
-    
-    localStorage.setItem('Fname',Name);
-    localStorage.setItem('Usn',usn);
-    localStorage.setItem('email',email);
-    localStorage.setItem('Pass',pass);
-    localStorage.setItem('cpass',cpass);
+    // Redirect to index.html after saving
+    window.location.href = "index.html";
 }
 
+function displayProfileInfo() {
+    document.getElementById('pname').innerText += localStorage.getItem('Fname') || "No data";
+    document.getElementById('pemail').innerText += localStorage.getItem('email') || "No data";
+    document.getElementById('pusn').innerText += localStorage.getItem('Usn') || "No data";
+
+}
+
+// Call displayProfileInfo when the page loads
+window.onload = displayProfileInfo;
 
 function updateProfile(){
     alert("Entered");
@@ -63,13 +77,17 @@ function updateProfile(){
     localStorage.setItem('email',email);
     localStorage.setItem('Pass',pass);
     localStorage.setItem('cpass',cpass);
-    window.location.reload();
-    document.getElementById('pname').innerHTML=localStorage.getItem('Fname');
-    document.getElementById('pemail').innerHTML=localStorage.getItem('email');
-    document.getElementById('pusn').innerHTML=localStorage.getItem('Usn');
+    displayProfileInfo();
 };
 
 function login(){
     const USN=document.getElementById('USN').value;
     const Password=document.getElementById('Password').value;
+}
+
+function message(){
+    document.getElementById("passmessage").innerHTML ="(Minimum 8 characters) 1 capital letter, 1 number, and 1 special character is required.";
+}
+function clearmsg(){
+    document.getElementById("passmessage").innerHTML ="";
 }

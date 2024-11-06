@@ -5,6 +5,55 @@
     
 }
 
+
+.container{
+    display: inline-block;
+    text-align: center;
+    text-overflow: hidden;
+    margin-bottom: none;
+}
+.text{
+    overflow: hidden;
+    text-align: center;
+    align-items: center;
+    border-right: 2px solid orange;
+    animation: typing 4s infinite;
+    font-size: 3.0rem;
+    font-weight: 700;
+    white-space: nowrap;
+    color: #F4CE14;
+    
+}
+@keyframes typing{
+    from{width: 0;}
+    to{
+        width: 100%;
+    }
+
+}
+
+
+
+/* watch */
+
+.timediv {
+    background-color: #243642;
+    color: rgb(16, 16, 16);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: right;
+    padding-left: 0;
+    padding-right: 10px;
+       
+}
+.divtime {
+    margin: 5px;
+    width: 70px;
+    justify-items: center;
+}
+
 .Notebook-img{
     height: 28px;
     padding-right: 3px;
@@ -27,21 +76,26 @@
     display: flex;
     align-items: center;
     padding-right: 15px;
+    display: flex;
+
 }
 #links a{
     padding: 12px 12px 12px 12px;
     margin-left: 8px;
     height: 30%;
     text-decoration: none;
-    border: 1px  solid white;
-    box-shadow: 2px 2px white;
-    border-radius: 5px;
-    
+    flex-wrap: wrap; 
 }
 
-#links a:hover{
-    padding: 1.01em;
+#links a:hover {
+    font-size: 1.1rem;
+    border-radius: 50%; /* Rounds the border corners */
+    border: 2px solid transparent; /* Provides space for the gradient border */
+    border-image: linear-gradient(to right, gold, red) 1; /* Applies the gradient border */
 }
+
+
+
 
 
 
@@ -100,10 +154,7 @@
 .features h2{
     text-shadow: 2px 3px black;
 }
-.features h2:hover{
-    transform: scale(1.1);
-    transition: 1s ease;
-}
+
 
 
 .feature-box {
@@ -122,7 +173,7 @@
     margin: 20px 0;
 }
 .feature:hover{
-    font-size: 1.05em;
+    border-image: linear-gradient(to bottom,gold ,red)5;
 }
 .feature h3 {
     color: white;
@@ -143,10 +194,7 @@
 .how-it-works h2{
     text-shadow: 2px 3px black;  
 }
-.how-it-works h2:hover{
-    transform: scale(1.1);
-    transition: 2s ease;
-}
+
 .steps:hover{
     font-size: 1.05em;
 }
@@ -157,11 +205,6 @@
     
 }
 
-.step h4:hover{
-    transform: scale(1.1);
-    transition: 2s ease;
-    text-shadow: 2px 3px black;
-}
 .step {
     background-color: #243642;
     border: 2px solid white;
@@ -172,8 +215,8 @@
     margin: 20px 0;
 }
 
-.steps:hover{
-    font-size: 1,07em;
+.step:hover{
+    border-image: linear-gradient(to bottom,gold ,red)1;
 }
 
 /* Footer Section */
@@ -204,7 +247,6 @@ footer {
 /*Profile Css*/
 
 .profile {
-    padding: 50px 20px;
     text-align: center;
 }
 
@@ -213,7 +255,7 @@ footer {
     border: 2px solid white;
     border-radius: 10px;
     padding: 20px;
-    width: 50%;
+    width: 35%;
     margin: 0 auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -280,7 +322,7 @@ footer {
 }
 
 #Profile_user_image{
-    height: 80px;
+    height: 50px;
     color: white;
 }
 
